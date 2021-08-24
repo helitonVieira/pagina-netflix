@@ -1,0 +1,134 @@
+:root{/*variaveis quando vai usar varias vezes no codigo*/
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+*{ /*definição para inicializar sem espações*/
+    margin:0;
+    padding:0;
+    box-sizing: border-box;/*não deixar que passe estore o tamanho*/
+}
+
+/*elementos base*/
+body{
+   background: var(--preta);
+   font-family: 'Arial', Times, serif;
+   color:white;
+}
+
+
+header .container{
+    display:flex;  /*colocar msm linha*/
+    flex-direction: row;/*propriedade padrao*/
+    align-items: center;/*alinhar ao centro*/
+    justify-content: space-between;/*distancia entre elementos */
+    
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size:40px;
+}
+
+header nav a{
+    text-decoration:none; /*retirar sublinhado*/
+    color:#AAA;
+    margin-right: 10px;
+}
+
+
+header nav a:hover{/*evento quando passar mouse*/
+    color:#fff;
+}
+
+/*filme principal*/
+.filme-principal{
+    font-size:16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),  url('/img/capa-house.jpg');/*cor escura de fundo , imagem*/
+
+    height:400px;
+    background-size:cover;/*p/ não cortar a imagem ocupar a caixa toda*/
+ 
+
+    display: flex; /*colocar em linha vertical*/
+    flex-direction: column; /*passar para horizontal coluna*/
+    justify-content: center;/*centralizar*/
+    align-items: flex-start;
+}
+
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50); /*Aplicar transparencia*/
+    border:none;/*retirar borda*/
+    color: white;
+
+    padding:15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer; /*indentificar que é botao*/
+    transition: .3s ease all; /*3seg */
+}
+
+.botao:hover{/*quando passar mouse*/
+    background-color:white;
+    color:black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 70%; /*texto nao utrapassar a tela responsivo*/
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+
+.carrosel-filmes{
+    margin-top:5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
